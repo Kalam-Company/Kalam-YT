@@ -7,6 +7,6 @@ async def start(client, message):
     joinButton = InlineKeyboardMarkup([
         [InlineKeyboardButton("🔥 Developer 🔥", url="https://t.me/kalam_company")],
     ])
-    welcomed = f"Hey <b>{message.from_user.first_name}</b>,    \n<b>I'm A Simple But POWERFUL You Tube URL Uploader Bot With Permanent Thumbnail Support!!! 💯</b> \n\n<b>Please send me a You Tube video Link (or) Share me a Video from You Tube, I can upload to telegram as File/Video</b>\n\n/help for More info"
+    welcomed = f"Hey <b>{message.from_user.first_name}</b>,\n\n     <b>I'm A Simple but POWERFUL You Tube URL Uploader Bot With Permanent Thumbnail Support!!! 💯</b> \n\n<b>Please send me a You Tube video Link, I can upload to telegram as File/Video!!!</b>\n\n/help for More info"
     await message.reply_text(welcomed, reply_markup=joinButton)
     raise StopPropagation
